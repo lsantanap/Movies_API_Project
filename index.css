@@ -18,6 +18,7 @@
     align-items: center;
 }
 
+
 .btn{
     display: flex;
     cursor: pointer;
@@ -35,6 +36,29 @@
     text-transform: uppercase;
     transition: all .35s ease;
 }
+.main__background{
+   position: relative; 
+}
+.main__background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/bacgroundpic.jpg);
+    background-color: rgba(255, 192, 203, 0.5);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    filter: grayscale(50%) blur(5px);
+    
+}
+.main__background > * {
+    position: relative;
+    z-index: 2;
+  }
+
 
 
 /* Navigation Bar  */
@@ -82,6 +106,7 @@
     display: flex;
     flex: 1;
    flex-direction: column;
+   
 }
 .title{
     font-size: 57px;
@@ -93,6 +118,7 @@
 }
 .landing{
     flex-direction: column;
+   
 }
 .subtitle{
     font-size: 30px;
@@ -106,9 +132,12 @@
 }
 .input__wrapper{
     width: 100%;
+    max-width: 600px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    left: 250px;
+   
     
 }
 input{
@@ -124,4 +153,16 @@ input{
     width: 100%;
     font-size: 24px;
     padding-left: 25px;
+}
+.input__container{
+    position: relative;
+    width: 100%;
+}
+.search__wrapper{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 36px;
+    cursor: pointer;
+
 }

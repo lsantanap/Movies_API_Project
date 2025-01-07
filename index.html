@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d781a64b62.js" crossorigin="anonymous"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,36 @@
 
 </head>
 <body>
- <header class="navbar">
-    <div class="nav content__wrapper justify__between">
-        <div class="logo">
-            <img src="Assets/logo.PNG" alt="streamix logo" class="logo">
+<div class="main__background">
+    <header class="navbar">
+        <div class="nav content__wrapper justify__between flex__col">
+            <div class="logo">
+                <img src="Assets/logo.PNG" alt="streamix logo" class="logo">
+            </div>
+            <div class="links">
+                <a href="" class="link">Home</a>
+                <a href="" class="link">Discover Movies</a>
+                <button class="btn contact">Contact</button>
+            </div>
         </div>
-        <div class="links">
-            <a href="" class="link">Home</a>
-            <a href="" class="link">Discover Movies</a>
-            <button class="btn contact">Contact</button>
+    </header>
+    
+    <section id="landing__page">
+        <div class="landing content__wrapper justify__between align__item">
+            <h1 class="title pretty">Find Your Next Watch</h1>
+            
         </div>
-    </div>
- </header>
- 
- <section id="landing__page">
-    <div class="landing content__wrapper justify__between align__item">
-        <h1 class="title pretty">Cuba's Favorite Streaming Platform</h1>
-        <h2 class="subtitle">Find Your Nex Great Watch with <span class="pretty">StreamMix</span></h2>
-    </div>
-    <div class="input__wrapper">
-        <input type="text" placeholder="Search your Movie title">
-    </div>
-</section>
+        <div class="input__wrapper">
+            <div class="input__container"> 
+            <input type="text" placeholder="Search your Movie title">
+            <div class="search__wrapper pretty" > 
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+        </div>
+        </div>
+    </section>
+</div>
     
 </body>
 </html>
