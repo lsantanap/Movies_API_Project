@@ -166,3 +166,20 @@ input{
     cursor: pointer;
 
 }
+/* Movies */
+.movie__calatog-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 60px 20px;
+}
+.poster{
+    width: 100%;
+    
+}
+.img__poster{
+    width: 30%;
+}
+.movie__card{
+    width: 30%;
+}
